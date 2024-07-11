@@ -1,6 +1,7 @@
 $phone: #eee;
 $circle: #f00;
 $pulse: #999;
+$seconds: 0.4s;
 $method: ease-in-out;
 $shadow: 0px 3px 7px rgba(0, 0, 0, 0.2);
 
@@ -24,7 +25,7 @@ $shadow: 0px 3px 7px rgba(0, 0, 0, 0.2);
     align-items: center;
     width: 100px;
     height: 100px;
-    transition: all 0.5s $method;
+    transition: all $seconds $method;
     border-radius: 50px;
     background: #e0e0e0;
     box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
@@ -51,7 +52,7 @@ $shadow: 0px 3px 7px rgba(0, 0, 0, 0.2);
       height: 100px;
       border-radius: 50px;
       background: $circle;
-      transition: all 0.5s $method;
+      transition: all $seconds $method;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -69,12 +70,12 @@ $shadow: 0px 3px 7px rgba(0, 0, 0, 0.2);
       width: 70px;
       height: 70px;
       fill: $phone;
-      transition: all 0.5s $method;
+      transition: all $seconds $method;
       filter: drop-shadow($shadow);
 
       svg {
         fill: $circle;
-        transition: all 0.5s $method;
+        transition: all $seconds $method;
         animation: shake 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
           both;
       }
